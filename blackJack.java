@@ -7,16 +7,19 @@ class blackJack{
 		double x = Math.floor(Math.random()*(13)+1);
 		double y = Math.floor(Math.random()*(13)+1);
 		double z = Math.floor(Math.random()*(13)+1);
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
 		System.out.println("[x]" + "[x]");
 		System.out.println("Desea otra carta? (Y/N)");
 		Scanner res = new Scanner(System.in);
 		let=res.nextLine();
 		if(let.equalsIgnoreCase("y")){
-		q=x+y+z;
+		q=(x+(y)+(z));
 		System.out.println("[x]" + "[x]" + "[x]");
-		System.out.println(z);}
+		System.out.println(q);}
 		else if(let.equalsIgnoreCase("n")){
-		q=x+y;
+		q=(x+y);
 		System.out.println("[x]" + "[x]");
 		System.out.println(q);
 		}
